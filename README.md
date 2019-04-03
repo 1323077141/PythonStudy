@@ -1,5 +1,6 @@
-# PythonStudy  
-This is my Python Files  
+# Python3  
+
+
 # 基础语法
 1.编码：#coding=utf-8  
 2.标识符:第一个字符必须是字母表中字母或下划线 _ ;标识符的其他的部分由字母、数字和下划线组成;标识符对大小写敏感  
@@ -15,3 +16,30 @@ This is my Python Files
 10.Print 输出:print 默认输出是换行的，如果要实现不换行需要在变量末尾加上 end=""   
 11.模块的导入:用 import 或者 from...import 来导入相应的模块;将整个模块(somemodule)导入，格式为： import somemodule;从某个模块中导入某个函数,格式为： from somemodule import somefunction;从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc;将某个模块中的全部函数导入，格式为： from somemodule import *
 # 基本数据类型
+1.可为多个变量赋值，用逗号隔开   
+2.数据类型:不可变--Number（数字）、String（字符串）、Tuple（元组）;可变---List（列表）、Dictionary（字典）、Set（集合）   
+3.Number:Python3 支持 int、float、bool、complex（复数);内置的 type() 函数可以用来查询变量所指的对象类型;isinstance(a, int)判断类型;isinstance 和 type 的区别在于：type()不会认为子类是一种父类类型;isinstance()会认为子类是一种父类类型;del var1[,var2[,var3[....,varN]]] 删除对象引用   
+4.String:字符串用单引号 ' 或双引号 " 括起来，同时使用反斜杠 \ 转义特殊字符;如果让反斜杠发生转义，可以在字符串前面添加一个 r，表示原始字符串    
+5.List:列表中元素的类型可以不相同，它支持数字，字符串甚至可以包含列表;列表是写在方括号 [] 之间、用逗号分隔开的元素列表   
+6.Tuple:与列表类似，不同之处在于元组的元素不能修改。元组写在小括号 () 里，元素之间用逗号隔开;虽然tuple的元素不可改变，但它可以包含可变的对象，比如list列表;可构造包含 0 个或 1 个元素的元组;string、list 和 tuple 都属于 sequence（序列）    
+7.Set:由一个或数个形态各异的大小整体组成的，构成集合的事物或对象称作元素或是成员;基本功能是进行成员关系测试和删除重复元素;可以使用大括号 { } 或者 set() 函数创建集合，创建一个空集合必须用 set() 而不是 { }，因为 { } 是用来创建一个空字典;parame = {value01,value02,...}或者set(value)  
+8.Dictionary:列表是有序的对象集合，字典是无序的对象集合,两者之间的区别在于：字典当中的元素是通过键来存取的，而不是通过偏移存取;字典是一种映射类型，字典用 { } 标识，它是一个无序的 键(key) : 值(value) 的集合;键(key)必须使用不可变类型;在同一个字典中，键(key)必须是唯一的    
+9.数据类型转换函数:   
+| 函数 | 描述 |  
+| :---: | :---: |
+| int(x [,base])|将x转换为一个整数|
+| float(x)|将x转换到一个浮点数|
+| complex(real [,imag])|创建一个复数|
+| str(x)|将对象 x 转换为字符串|
+| repr(x)|将对象 x 转换为表达式字符串|
+| eval(str)|用来计算在字符串中的有效Python表达式,并返回一个对象|
+| tuple(s)|将序列 s 转换为一个元组|
+| list(s)|将序列 s 转换为一个列表|
+| set(s)|转换为可变集合|
+| dict(d)|创建一个字典。d 必须是一个序列 (key,value)元组|
+| frozenset(s)|转换为不可变集合|
+| chr(x)|将一个整数转换为一个字符|
+| ord(x)|将一个字符转换为它的整数值|
+| hex(x)|将一个整数转换为一个十六进制字符串|
+| oct(x)|将一个整数转换为一个八进制字符串|
+

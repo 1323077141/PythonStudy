@@ -33,6 +33,57 @@
 5.成员运算符:in(如果在指定的序列中找到值返回 True，否则返回 False),not in(如果在指定的序列中没有找到值返回 True，否则返回 False)   
 6.身份运算符:is(判断两个标识符是不是引用自一个对象),not is(判断两个标识符是不是引用自不同对象)(ps: id() 函数用于获取对象内存地址)（ps:is 用于判断两个变量引用对象是否为同一个， == 用于判断引用变量的值是否相等）    
 7.运算符优先级:( ** )指数 >( ~ + - )按位翻转, 一元加号和减号 > ( * / % // )乘，除，取模和取整除 > ( + - )加法减法 > ( >> << )右移，左移运算符 > ( & )位 'AND' > ( ^ | )位运算符 > ( <= < > >= )比较运算符 > ( <> == != )等于运算符 > ( = %= /= //= -= += *= **= )	赋值运算符 > ( is is not )身份运算符 > ( in not in )成员运算符 > ( not and or )逻辑运算符    
+# 语句语法
+1.条件语句
+`
+if 判断条件1:  
+    执行语句1……  
+elif 判断条件2:  
+    执行语句2……  
+elif 判断条件3:  
+    执行语句3……  
+else:  
+    执行语句4……  
+`  
+2.循环语句  
+循环类型：while,for,嵌套（while循环体中嵌套for循环）   
+循环控制语句：break,continue,pass   
+2.1.while:  
+`
+while 判断条件：  
+    执行语句……  
+else  
+  ....  
+`  
+2.2.for循环:  
+`
+for iterating_var in sequence:  
+   statements(s)   
+ else  
+ statements
+`  
+2.3.嵌套循环  
+`
+for iterating_var in sequence:
+   for iterating_var in sequence:
+      statements(s)
+   statements(s)
+`  
+或  
+`
+while expression:
+   while expression:
+      statement(s)
+   statement(s)
+`  
+2.4.循环控制:  
+break语句用来终止循环语句，即循环条件没有False条件或者序列还没被完全递归完，也会停止执行循环语句;break语句用在while和for循环中;嵌套循环中，break语句将停止执行最深层的循环，并开始执行下一行代码;   
+continue 跳过当前循环的剩余语句，然后继续进行下一轮循环;   
+pass 不做任何事情，一般用做占位语句   
+
+
+
+
 
 
 
